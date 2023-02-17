@@ -4,17 +4,32 @@
 }
 
 .weather{
+    max-width: 353px;
     background-color: #4440F7;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding-top: 37px;
     padding-bottom: 32px;
-    @media screen and (max-width: 768px) {
-        max-width: 353px;
-        margin: 0 auto;
-      }
 }
-
+ @media (max-width: 767px){ 
+    .weather{
+    margin: 0 auto;}
+}
+@media (min-width: 768px){ 
+    .weather{
+    height: 675px;
+    }
+    .weather_character{
+    font-size: 64px;
+    line-height: 1.15;  
+    }
+    .weather_location{
+    font-size: 20px;
+    line-height: 1.1;
+    height: 42px;
+    width: 177px; 
+    }
+}
 
 .weather_wrap{
     display: flex;
