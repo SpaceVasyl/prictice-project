@@ -1,21 +1,25 @@
+
 .header {
     background-color: goldenrod;
 }
 
 .weather{
-    max-width: 288px;
     background-color: #4440F7;
-    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    position: relative;
     padding-top: 37px;
     padding-bottom: 32px;
+    @media screen and (max-width: 768px) {
+        max-width: 353px;
+        margin: 0 auto;
+      }
 }
+
+
 .weather_wrap{
     display: flex;
     gap: 16px;
-    margin-left: 17px;
+    margin-left: 38px;
 }
 .weather_character{
     color: #fff;
@@ -30,14 +34,15 @@
     line-height: 75px;
     color: #fff;
     display: inline;
+    position: relative;
 }
 .weather_degree::after{
     content:"";
     width: 1px;
     border: none;
     height: 75px;
-    top: 45.7px;
-    right: 60%;
+    top: 9.7px;
+    right: -4%;
     background-color: #fff;
     position: absolute;
     border-radius: 4px;
@@ -71,7 +76,7 @@
     padding: 3px;
 }
 
-.weather_date{
+.weather_week{
     color: #fff;
     font-family: 'Roboto';
     font-style: normal;
@@ -89,6 +94,7 @@
 }
 .main {
     background-color: #fff;
+    padding: 0 15px;
 }
 
 .footer {
