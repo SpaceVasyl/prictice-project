@@ -1,12 +1,109 @@
-
-
 .header {
     background-color: goldenrod;
 }
+
+.weather{
+    max-width: 288px;
+    background-color: #4440F7;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 32px;
+}
+.weather_wrap{
+    display: flex;
+    gap: 16px;
+    margin-left: 17px;
+}
+.weather_character{
+    color: #fff;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+}
+.weather_degree {
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 1.2;
+    line-height: 75px;
+    color: #fff;
+    display: inline;
+}
+.weather_degree::after{
+    content:"";
+    width: 1px;
+    border: none;
+    height: 75px;
+    top: 45.7px;
+    right: 60%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.weather_part{
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.weather_location{
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+    display: inline-block;
+    height: 34px;
+    width: 121px;
+    background-color: rgba(254, 254, 255, 0.3);
+    border-radius: 10px;
+    background-image: url(../images/svg/carbon_location-filled.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 5px 8px;
+    padding: 3px;
+}
+
+.weather_date{
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    display: inline-block;
+    height: 34px;
+    width: 151px;
+    background-color: rgba(254, 254, 255, 0.3);
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .main {
-    background-color: silver;
+    background-color: #fff;
 }
 
 .footer {
     background-color: palevioletred;
+}
+
+.alighn{
+    margin-top: 40px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.weather_image{
+    margin-top: 54px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

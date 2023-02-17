@@ -5,13 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./css/reset.css">
-    <link href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
   </head>
   <body>
-    <header class="header"><p class="header">asd</p></header>
-    <main class="main"><p>asd</p></main>
-    <footer class="footer"><p>asd</p></footer>
+    <header class="header"><p>header</p></header>
+    <main class="main">
+      <div class="weather">
+        <div class="weather_wrap">
+        <p class="weather_degree">23&deg</p>
+        <div class="weather_part">
+          <p class="weather_character">Sunny</p>
+          <button type="button" class="weather_location"><p class="weather_country">West Jakarta</p></button>
+          </div>
+        </div>
+        <img src="./images/Sun.png" width="121" class="weather_image">
+        <p class="weather_character alighn">Mon<br>
+          21 Jan 2021</p>
+        <button type="button" class="weather_date"><p class="">weather for week</p></button>
+      </div>
+    </main>
+    <footer class="footer"><p>footer</p></footer>
     <script src="./js/index.js"></script>
   </body>
 </html>
