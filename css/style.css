@@ -4,34 +4,14 @@
 }
 
 .weather{
-    max-width: 353px;
     background-color: #4440F7;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding-top: 37px;
     padding-bottom: 32px;
 }
- @media (max-width: 767px){ 
-    .weather{
-    margin: 0 auto;}
-}
-@media (min-width: 768px){ 
-    .weather{
-    max-height: 675px;
-    }
-    .weather_character{
-    font-size: 64px;
-    line-height: 1.15;  
-    }
-    .weather_location{
-    font-size: 20px;
-    line-height: 1.1;
-    height: 42px;
-    width: 177px;
-    }
-    .weather_degree {
-    font-size: 64px;
-}}
+ 
+
 .weather_country{
     display: inline-block;
     margin-left: 13px;
